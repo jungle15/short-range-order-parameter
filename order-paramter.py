@@ -5,15 +5,16 @@ import string
 f = open('order.xyz','r')
 fout = open('order-para.dat','w')
 
-#input the number of coil and rod length (n and m), and the total number np
+#键盘输入软段和硬段的长度（n和m）
+#input the number of coil and rod length (n and m)
 n = int(raw_input("the number of n: "))
 m = int(raw_input("the number of m: "))
 lines = f.readlines()
-np = int(lines[0])
-nmol = int(np/(n+m))
+np = int(lines[0])               #the number of total beads 体系中粒子的总数目
+nmol = int(np/(n+m))             #the number of total rods 体系中所以刚性链段的总数
 
 f.close()
-f = open('order.xyz','r')
+f = open('order.xyz','r')        #input file 输入坐标文件order.xyz
 #read all of the points
 p = []
 for lines in f.readlines()[2:]:
