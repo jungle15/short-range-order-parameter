@@ -4,3 +4,6 @@
 
 input file:
     order.xyz
+
+usage:
+    python < order-parameter.py
