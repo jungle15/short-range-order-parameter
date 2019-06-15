@@ -1,2 +1,2 @@
 # short-range-order-parameter
-some small python scripts for simulation analysis
+本脚本用于计算rod-coil组装体中
